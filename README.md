@@ -2,20 +2,19 @@
 最近已开过两个vue全家桶项目了，觉得外面很多vue组件库不能满足需求，需要自己展示手写组件能力。所以写一份简单教程，加深印象
 
 # 代码使用 
-1. npm install (如果太慢建议 cnpm install)
-2. npm run dev
+1. vue init webpack projectname
+2. npm install (如果太慢建议npm install -g cnpm --registry=https://registry.npm.taobao.org 然后cnpm install)
+3. npm run dev
 
 # 项目初始化 #
 ## 1.初始化一个vue的项目
-新手推荐先使用vue的脚手架(vue-cli),除非你已经很了解webpack了（关于webpack后续我也会写一些，敬请关注）。
+基于node环境安装步骤
+1. vue init webpack projectname（提示y/n 只有第一个选y 其他选no,根据个人习惯选择）
+2. cd到指定的项目文件夹里npm install
+3. npm run dev
 
-vue-cli有几个模版，我们先使用一个简单点的webpack-simple。
-```
- vue init webpack-simple my_component
-```
-一路回车敲下去，会生成一个项目，里面包含了package.json，webpack.config.js,src目录和一些其他文件
 ## 2.项目的配置
-本文先假设你对npm的的配置和webpack了解，它们的配置不在本文的讨论内容中，直接粘贴我的配置信息即可。
+
 ### package.json:
 ```
 {
